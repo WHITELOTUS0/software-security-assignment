@@ -36,7 +36,7 @@ app.post('/login', (req, res) => {
     if (result.length > 0) {
       res.send(`<h1>Logged in successfully</h1>`);
     } else {
-      res.send('Login failed');
+      res.send(`<h1 style="color: red;">Login failed</h1>`);
     }
   });
 });
