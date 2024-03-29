@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
@@ -9,11 +10,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/public', express.static('public'));
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'unsecure_app'
+  host: process.env.HOST,
+  user: process.env.DB_USER,
+  port: process.env.DB_PORT,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DATABASE
 });
+
 
 connection.connect((err) => {
   if (err) throw err;
@@ -31,7 +34,7 @@ app.post('/login', (req, res) => {
   connection.query(sql, (err, result) => {
     if (err) throw err;
     if (result.length > 0) {
-      res.send('Logged in successfully');
+      res.send(`<h1>Logged in successfully</h1>`);
     } else {
       res.send('Login failed');
     }
