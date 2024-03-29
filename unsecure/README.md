@@ -29,7 +29,7 @@ To get a local copy up and running, follow these simple steps.
 
 2. Navigate to the unsecure directory:
     ```sh
-    cd unsecure
+    software-security-assignment/unsecure
     ```
 
 3. Install required packages using npm:
@@ -51,12 +51,13 @@ To get a local copy up and running, follow these simple steps.
 5. Start the server:
    ```sh
    npm start
-  ```
-6. Open your web browser and navigate to `http://localhost:3000` to view the application.  
+   ```
+
+6. Open your web browser and navigate to http://localhost:3000 to view the application.  
 
 ### License
 
-Distributed under the MIT License. See ![LICENSE] for more information
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information
 
 ### Security Disclaimer
 This application contains intentional security vulnerabilities for demonstration purposes. Do not use this code in production or expose it to the internet.
