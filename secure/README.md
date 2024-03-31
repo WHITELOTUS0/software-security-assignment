@@ -1,6 +1,6 @@
 # Secure App
 
-This is a demonstration application to illustrate common web security vulnerability sol, specifically SQL Injection and CSRF (Cross-Site Request Forgery). It is built using Node.js, Express, and MySQL. This application is intended for educational purposes only and should not be deployed in a production environment.
+This is a demonstration application to illustrate common web security vulnerability solutions, specifically SQL Injection and CSRF (Cross-Site Request Forgery). It is built using Node.js, Express, and MySQL. This application is intended for educational purposes only and should not be deployed in a production environment.
 
 ## Technologies Used
 
