@@ -29,7 +29,7 @@ To get a local copy up and running, follow these simple steps.
 
 2. Navigate to the unsecure directory:
     ```sh
-    software-security-assignment/unsecure
+    software-security-assignment/secure
     ```
 
 3. Install required packages using npm:
